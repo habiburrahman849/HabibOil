@@ -1,0 +1,39 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.product-card,
+blockquote,
+.rounded-\[2rem\],
+.rounded-\[1\.75rem\] {
+  transition: transform 0.35s ease, box-shadow 0.35s ease, opacity 0.5s ease;
+}
+
+.product-card:hover,
+blockquote:hover,
+.rounded-\[2rem\]:hover {
+  transform: translateY(-6px);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.floating-whatsapp {
+  animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
